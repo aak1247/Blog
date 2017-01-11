@@ -15,5 +15,10 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-server": "^0.2.0"
-  }
+  },
+   "author": "aak1247",
+   "description": "Still waters run deep",
+   "avatar": "/images/avatar.gif",
+   "language": "zh-Hans",
+   "duoshuo_shortname": "aak1247"
 }
