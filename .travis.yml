@@ -15,4 +15,4 @@ after_success:
     - git add .
     - git commit -m "Travis Deploy"
     - git push -f -q https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/$GITHUB_USERNAME/$GITHUB_USERNAME.github.io master
-    - git push -f -q https://$CODING_USERNAME:$CODING_PASSWORD@coding.net/$CODING_USERNAME/$CODING_USERNAME.coding.me master
+    - git push -f -q https://$CODING_USERNAME:$CODING_PASSWORD@git.coding.net/$CODING_USERNAME/$CODING_USERNAME.coding.me master
