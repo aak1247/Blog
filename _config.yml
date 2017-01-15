@@ -21,7 +21,7 @@
    "description": "Still waters run deep",
    "avatar": "/images/avatar.gif",
    "language": "zh-Hans",
-   "duoshuo_shortname": "aak1247"
+   "duoshuo_shortname": "aak1247",
    "algolia": {
            "appId": "D9H213A3K8",
            "apiKey": "47184ccb2710976142b165ae9dc1eb32",
