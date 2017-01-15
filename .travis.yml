@@ -6,6 +6,7 @@ before_install:
     - git config --global user.name $GITHUB_USERNAME
     - npm i hexo-cli -g
     - git clone $THEME_URI themes/$THEME_NAME
+    - npm install hexo-algoliasearch
 script:
     - hexo config theme $THEME_NAME
     - hexo generate
