@@ -28,5 +28,12 @@
            "adminApiKey": "ddf1627ad4d52e80d78265e425a7c649",
            "indexName": "blog_PAGE",
            "chunkSize": "5000"
+   },
+   "baidu-site-verification": "<meta name="baidu-site-verification" content="UX9g1c87KX" />",
+   "sitemap": {
+      "path": "sitemap.xml"
+   },
+   "baidusitemap": {
+     "path": "baidusitemap.xml"
    }
 }
