@@ -8,6 +8,7 @@ before_install:
     - git clone $THEME_URI themes/$THEME_NAME
     - npm install hexo-algoliasearch
     - npm install hexo-generator-feed
+    - npm install hexo-generator-sitemap
 script:
     - hexo config theme $THEME_NAME
     - hexo generate
