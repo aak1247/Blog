@@ -29,7 +29,7 @@
            "indexName": "blog_PAGE",
            "chunkSize": "5000"
    },
-   "baidu-site-verification": "<meta name="baidu-site-verification" content="UX9g1c87KX" />",
+   "baidu-site-verification": '<meta name="baidu-site-verification" content="UX9g1c87KX" />',
    "sitemap": {
       "path": "sitemap.xml"
    },
