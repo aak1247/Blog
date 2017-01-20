@@ -9,17 +9,6 @@ avatar: /images/avatar.gif
 language: zh-Hans
 duoshuo_shortname: aak1247
 
-algolia: 
-  applicationID: D9H213A3K8
-  apiKey: 47184ccb2710976142b165ae9dc1eb32
-  adminApiKey: ddf1627ad4d52e80d78265e425a7c649
-  indexName: blog_PAGE
-  chunkSize: 5000
-  fields: 
-    - title
-    - slug
-    - content:strip
-
 sitemap: 
   path: sitemap.xml
 baidusitemap: 
