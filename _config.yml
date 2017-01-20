@@ -30,11 +30,20 @@
            "adminApiKey": "ddf1627ad4d52e80d78265e425a7c649",
            "indexName": "blog_PAGE",
            "chunkSize": "5000"
+          "fields": [
+              "title",
+              "slug",
+              "content:strip"]
    },
    "sitemap": {
       "path": "sitemap.xml"
    },
    "baidusitemap": {
      "path": "baidusitemap.xml"
-   }
+   },
+   "plugins": [
+     "hexo-algoliasearch",
+     "hexo-generate-feed",
+     "hexo-generator-sitemap"
+     ]
 }
