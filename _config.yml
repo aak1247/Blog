@@ -40,10 +40,5 @@
    },
    "baidusitemap": {
      "path": "baidusitemap.xml"
-   },
-   "plugins": [
-     "hexo-algoliasearch",
-     "hexo-generate-feed",
-     "hexo-generator-sitemap"
-     ]
+   }
 }
