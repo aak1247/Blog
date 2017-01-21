@@ -302,7 +302,16 @@ date: 2017/1/21
   <script type="text/javascript" src="{{ url_for(theme.js)  }}/src/issue.js"></script>
 ```
 
+  修改page.swig文件，在``<div id="posts" class="posts-expand">``中，找到
+```scss
+  {% endif %}
+```
+  在其上方加入如下：
 
+```scss
+      {% elif page.type === 'issue' %}
+        {% include '_custom/issue.swig' %}
+```
 
   使添加的issue.swig文件能够包含进来。
 
