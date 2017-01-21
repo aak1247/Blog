@@ -24,7 +24,7 @@ date: 2017/1/21
   ### 留言板
 
   官方的版本未提供对留言板的支持，不过这个可以通过一些方式很简单地实现。为了在导航菜单上添加留言板，需要修改主题配置文件(``path='next/'``)的menu项，加入message字段并给出页面路径，在menu_icons中加入图标的映射。
-
+<!--more-->
   ```yaml
   # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
   menu:
