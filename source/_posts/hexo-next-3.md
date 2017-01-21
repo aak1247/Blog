@@ -48,7 +48,11 @@ date: 2017/1/22
 
   ## 自定义方法
 
-  以next主题为例，可以直接修改``.swig``文件修改对应页面，通过修改``page.swig``文件可以更改页面的主体内容模板，通过``page.type``字段可以进行页面类型的定义和判断。可以自定义新的``type``加入判断即可。自定义新的``.swig``文件，通过``{% include xxx %}``引入。css和js文件可以在``next/layout/_partials/custom_head.swig``中引入。建议对于已有的样式定义更高优先级的样式进行覆盖，不建议直接修改原样式。另外css的修改可以直接在``next/source/css/_custom/custom.styl``中添加。
+  以next主题为例，可以直接修改``.swig``文件修改对应页面，通过修改``page.swig``文件可以更改页面的主体内容模板，通过``page.type``字段可以进行页面类型的定义和判断。可以自定义新的``type``加入判断即可。自定义新的``.swig``文件，通过
+  ```scss
+    {% include xxx %}
+  ```
+  引入。css和js文件可以在``next/layout/_partials/custom_head.swig``中引入。建议对于已有的样式定义更高优先级的样式进行覆盖，不建议直接修改原样式。另外css的修改可以直接在``next/source/css/_custom/custom.styl``中添加。
 
   侧边栏的链接图标可以在``next/layout/_macro/sidebar.swig``中修改，fontawesome对于国内平台的支持不是很全面，可以使用[阿里巴巴矢量图库](http://www.iconfont.cn)添加更多图标。在文件中找到如下内容：
 
