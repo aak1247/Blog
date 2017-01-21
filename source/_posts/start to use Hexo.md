@@ -1,7 +1,5 @@
 title: 如何使用hexo提高自己的逼格
-categories: 
- - 前端
-   - 博客
+categories: 前端
 tags: 
  - hexo
  - 博客
