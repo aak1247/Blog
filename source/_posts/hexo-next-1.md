@@ -14,17 +14,17 @@ date: 2017/1/21
 
 
 
-​	感谢铮神（[@zccz14](zccz14.com)）的博客，成功使用Travis CI和github实现了博客的自动部署。最近几天一直在折腾hexo，就讲一下自己的一点经验。因为我只用了[next主题](http://theme-next.iissnan.com)，所以以下所有的配置也都是针对next主题的，其他主题也大致相似。
+​	感谢铮神（[@zccz14](zccz14.com) ）的博客，成功使用Travis CI和github实现了博客的自动部署。最近几天一直在折腾hexo，就讲一下自己的一点经验。因为我只用了[next主题](http://theme-next.iissnan.com)  ，所以以下所有的配置也都是针对next主题的，其他主题也大致相似。
 
 ## 开始使用Hexo与主题配置
 
-优先参考 [官方文档] (https://hexo.io/zh-cn/docs/)，大部分问题都可以在官方文档中找到答案。
+优先参考 [官方文档] (https://hexo.io/zh-cn/docs/) ，大部分问题都可以在官方文档中找到答案。
 
 ### 开始使用
 
 #### 安装
 
-hexo使用node.js编写，所以要正常地使用首先需要安装node。同时也需要安装Git，对于后续的部署和版本控制都十分有用，并且hexo的一些命令需要基于Git命令来完成，关于Git的使用可以参考[Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)。安装完成后在命令行中使用node附带的包管理器安装hexo:``npm install -g hexo-cli``。安装完成后即可使用hexo命令。
+hexo使用node.js编写，所以要正常地使用首先需要安装node。同时也需要安装Git，对于后续的部署和版本控制都十分有用，并且hexo的一些命令需要基于Git命令来完成，关于Git的使用可以参考[Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)  。安装完成后在命令行中使用node附带的包管理器安装hexo:``npm install -g hexo-cli``。安装完成后即可使用hexo命令。
 
 #### 使用步骤 
 
@@ -81,7 +81,7 @@ hexo使用node.js编写，所以要正常地使用首先需要安装node。同�
 
 ### 自动部署
 
-这一部分内容参考[@zccz14](zccz14.com)的博客[优雅地使用Hexo](https://zccz14.com/2016/12/30/%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8Hexo/)，使用Travis CI自动执行脚本的方式，动态生成静态博客内容并push到git repo中，完成部署。由于github主动屏蔽了百度的内容抓取，没有域名的情况下推荐使用coding.net提供的coding pages服务（[Coding Pages 介绍](https://coding.net/help/doc/pages/index.html) ），具体使用与Github pages相同。
+这一部分内容参考[@zccz14](zccz14.com) 的博客[优雅地使用Hexo](https://zccz14.com/2016/12/30/%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8Hexo/) ，使用Travis CI自动执行脚本的方式，动态生成静态博客内容并push到git repo中，完成部署。由于github主动屏蔽了百度的内容抓取，没有域名的情况下推荐使用coding.net提供的coding pages服务（[Coding Pages 介绍](https://coding.net/help/doc/pages/index.html)  ），具体使用与Github pages相同。
 
 在项目根目录下建立.travis.yml文件如下:
 
@@ -110,4 +110,4 @@ after_success:
 
 ### 简化配置
 
-站点的配置可以参考[官方文档](https://hexo.io/zh-cn/docs/)的说明，大部分设置项都有不需要修改的默认值，可以参考我上面的<a href="#使用步骤">_config.yml</a>内容，需要添加第三方插件时直接加入相关配置即可。
+站点的配置可以参考[官方文档](https://hexo.io/zh-cn/docs/) 的说明，大部分设置项都有不需要修改的默认值，可以参考我上面的<a href="#使用步骤">_config.yml</a>内容，需要添加第三方插件时直接加入相关配置即可。

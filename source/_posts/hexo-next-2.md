@@ -19,14 +19,14 @@ date: 2017/1/21
 
   ### 
 
-  next主题内置了对多说评论的支持，只需要在站点配置文件中加入duoshuo_shortname字段，并填入注册多说时使用的域名后缀即可，详情可以查看[多说配置](http://theme-next.iissnan.com/third-party-services.html#duoshuo)。
+  next主题内置了对多说评论的支持，只需要在站点配置文件中加入duoshuo_shortname字段，并填入注册多说时使用的域名后缀即可，详情可以查看[多说配置](http://theme-next.iissnan.com/third-party-services.html#duoshuo) 。
 
   ### 留言板
 
-  官方的版本未提供对留言板的支持，不过这个可以通过一些方式很简单地实现。为了在导航菜单上添加留言板，需要修改主题配置文件(``path='next/'``)的menu项，加入message字段并给出页面路径，在menu_icons中加入图标的映射。
+  官方的版本未提供对留言板的支持，不过这个可以通过一些方式很简单地实现。为了在导航菜单上添加留言板，需要修改主题配置文件(``path='next/'``) 的menu项，加入message字段并给出页面路径，在menu_icons中加入图标的映射。
 <!--more-->
   ```yaml
-  # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
+  # When running the site in a subdirectory (e.g. domain.tld/blog) , remove the leading slash (/archives -> archives) 
   menu:
     home: /
     categories: /categories
@@ -250,39 +250,39 @@ date: 2017/1/21
   可以利用异步加载提高载入速度，js文件如下：
 
   ```javascript
-  var ghComment = $("#gh-comments");
-  //var ghComment_count = $("gh-comments-count");
+  var ghComment = $("#gh-comments") ;
+  //var ghComment_count = $("gh-comments-count") ;
 
-  function formatNumber(val, len) {
+  function formatNumber(val, len)  {
       var num = "" + val;
       len = len || 2;
-      while (num.length < len) {
+      while (num.length < len)  {
           num = "0" + num;
       }
       return num;
   }
 
-  function formatDate(str) {
-      var date = new Date(Date.parse(str));
-      return formatNumber(date.getFullYear()) + '-' + formatNumber(date.getMonth() + 1) + '-' + formatNumber(date.getDate()) + 
-              " " + formatNumber(date.getHours()) + ":" + formatNumber(date.getMinutes()) + ":" + formatNumber(date.getSeconds());
+  function formatDate(str)  {
+      var date = new Date(Date.parse(str) ) ;
+      return formatNumber(date.getFullYear() )  + '-' + formatNumber(date.getMonth()  + 1)  + '-' + formatNumber(date.getDate() )  + 
+              " " + formatNumber(date.getHours() )  + ":" + formatNumber(date.getMinutes() )  + ":" + formatNumber(date.getSeconds() ) ;
   }
 
-  function loadComments(data) {
-      console.log("load comments");
-      document.getElementById("gh-comments-count").innerHTML = data.length.toString();
-      for (var i = 0; i < data.length; i++) {
+  function loadComments(data)  {
+      console.log("load comments") ;
+      document.getElementById("gh-comments-count") .innerHTML = data.length.toString() ;
+      for (var i = 0; i < data.length; i++)  {
           var cuser = data[i].user.login;
           var cuserlink = 'https://www.github.com/' + data[i].user.login;
           var cbody = data[i].body_html;
           var cavatarlink = data[i].user.avatar_url;
-          var cdate = formatDate(data[i].created_at);
-          console.log(cbody);
+          var cdate = formatDate(data[i].created_at) ;
+          console.log(cbody) ;
           ghComment.append('<div class="gh-single-comment"><div class="commentgravatar"><a href="'+
           + cuserlink +'" target="_blank"><img src="' 
           + cavatarlink + '"></a></div><div class="commentheader"><a class="commentuser" href="' 
           + cuserlink + '" target="_blank">' + cuser + '</a><span class="commentdate">' 
-          + cdate + '</span></div><div class="commentbody">' + cbody + '</div></div>');
+          + cdate + '</span></div><div class="commentbody">' + cbody + '</div></div>') ;
       }
   }
 
@@ -292,7 +292,7 @@ date: 2017/1/21
       },
       dataType: 'json',
       success: loadComments
-  });
+  }) ;
   ```
 
   将JS文件保存到``next/js``路径下。
@@ -303,13 +303,13 @@ date: 2017/1/21
   <blockquote class="blockquote-center leave-message">快来留言吧！~请在 <a href="https://github.com/aak1247/aak1247.github.io/issues/1" target="_blank">Github issue</a> 页面完成操作</blockquote>
   <div id="messages">
       <div id="gh-comments-info">
-              <a href="javascript:void(0);">
+              <a href="javascript:void(0) ;">
               <span id="gh-comments-count">0</span>条留言</a>
       </div>
       <div id="gh-comments" style="opacity: 1"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="{{ url_for(theme.js) }}/src/issue.js"></script>
+  <script type="text/javascript" src="{{ url_for(theme.js)  }}/src/issue.js"></script>
   ```
 
   修改page.swig文件，在``<div id="posts" class="posts-expand">``中，找到``{% endif %}``在其上方加入如下：
@@ -347,11 +347,11 @@ date: 2017/1/21
     limit: 10000
   ```
 
-  同时在package.json中加入``"hexo-generator-search": "^1.0.2"``依赖项即可。本地部署的可以手动输入``npm i``完成依赖项的安装，使用Travis自动部署时无需修改配置脚本。效果可以在[黑境](http://aak1247.coding.me/)中预览。
+  同时在package.json中加入``"hexo-generator-search": "^1.0.2"``依赖项即可。本地部署的可以手动输入``npm i``完成依赖项的安装，使用Travis自动部署时无需修改配置脚本。效果可以在[黑境](http://aak1247.coding.me/) 中预览。
 
   ### 简繁切换
 
-  这是一个通用的方法，使用js处理可以避免后端语言的差异，代码来自网上。只需要将 cookdomain修改为你的页面地址即可。链接：[tw-cn.js](https://github.com/aak1247/warehouse/blob/master/codes/js/tw-cn.js)
+  这是一个通用的方法，使用js处理可以避免后端语言的差异，代码来自网上。只需要将 cookdomain修改为你的页面地址即可。链接：[tw-cn.js](https://github.com/aak1247/warehouse/blob/master/codes/js/tw-cn.js) 
 
   ### 站点地图
 
