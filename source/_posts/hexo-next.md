@@ -44,7 +44,7 @@ hexo使用node.js编写，所以要正常地使用首先需要安装node。同�
   theme: next
 ```
 
-  ​
+  ​<!--more-->
 
 ``package.json``文件是项目的node包信息，主要记录当前版本号和依赖项，是nodejs默认生成的一个东西，也是执行``npm install``命令时的依据文件，npm会根据它包含的依赖项自动安装包。
 
@@ -54,7 +54,7 @@ hexo使用node.js编写，所以要正常地使用首先需要安装node。同�
     "version": "0.0.0",
     "private": true,
     "hexo": {
-      "version": ""
+      "version": "3.2.2"
     },
     "dependencies": {
       "hexo": "^3.0.0",
@@ -75,7 +75,7 @@ hexo使用node.js编写，所以要正常地使用首先需要安装node。同�
 2.  修改配置和发布文章，这也是博客使用的主要内容。
 
 3.  通过修改_config.yml文件修改配置。
-    2. 官方推荐的方式为使用``hexo new article``建立新文章。也可以手动在source/_posts/路径下建立markdown文件来撰写文章。
+    1. 官方推荐的方式为使用``hexo new article``建立新文章。也可以手动在source/_posts/路径下建立markdown文件来撰写文章。
 
 4.  使用 ``hexo generate``命令生成静态博客，所有的内容位于public目录下。站点路径下以下划线开头的文件和文件夹不会被渲染。生成以后可以将public目录下的文件部署到服务器来建立可访问的博客。完成以后可以通过``hexo server``来启用本地服务器预览博客。
 
@@ -117,8 +117,6 @@ after_success:
 主要介绍一些第三方插件的接入以及几个有趣的功能的实现。
 
 ### 评论
-
-### 
 
 next主题内置了对多说评论的支持，只需要在站点配置文件中加入duoshuo_shortname字段，并填入注册多说时使用的域名后缀即可，详情可以查看[多说配置](http://theme-next.iissnan.com/third-party-services.html#duoshuo)。
 
