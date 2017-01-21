@@ -1,13 +1,14 @@
-title: 关于2014/2015及2016的总结
+title: 如何使hexo显得自己更有逼格
 
 tags: 
 
-- feelings
-- 总结
+- hexo
+- next主题
+- 静态博客
 
-category: 日记
+category: 前端
 
-date: 2017/1/14
+date: 2017/1/21
 
 ---
 
