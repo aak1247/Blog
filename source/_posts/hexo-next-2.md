@@ -302,11 +302,51 @@ date: 2017/1/21
   <script type="text/javascript" src="{{ url_for(theme.js)  }}/src/issue.js"></script>
 ```
 
-  修改page.swig文件，在``<div id="posts" class="posts-expand">``中，找到``{% endif %}``在其上方加入如下：
 
-```scss
-      {% elif page.type === 'issue' %}
-        {% include '_custom/issue.swig' %}
+
+  使添加的issue.swig文件能够包含进来。
+
+  然后在``index.md``中写入：
+
+```markdown
+  title: 留言板
+  date: 2017-01-17 16:27:30
+  type: "issue"
+  comments: false
+  ---
 ```
 
-  
+  效果如下：
+
+  <img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170121_163304.png" class="full-image"/>       
+
+  ### 搜索功能
+
+  next主题内置了对algolia-search/tinysearch/swiftsearch的支持，同时也提供了一个local search的插件，考虑到第三方服务的不稳定性以及可能付费等等问题，推荐使用local search，只需要在站点配置文件中加入：
+
+```yaml
+  search: 
+    path: search.xml
+    field: post
+    format: html
+    limit: 10000
+```
+
+  同时在package.json中加入``"hexo-generator-search": "^1.0.2"``依赖项即可。本地部署的可以手动输入``npm i``完成依赖项的安装，使用Travis自动部署时无需修改配置脚本。效果可以在[黑境](http://aak1247.coding.me/) 中预览。
+
+  ### 简繁切换
+
+  这是一个通用的方法，使用js处理可以避免后端语言的差异，代码来自网上。只需要将 cookdomain修改为你的页面地址即可。链接：[tw-cn.js](https://github.com/aak1247/warehouse/blob/master/codes/js/tw-cn.js) 
+
+  ### 站点地图
+
+  只需要在站点配置文件中加入：
+
+```yaml
+  sitemap: 
+    path: sitemap.xml
+  baidusitemap: 
+    path: baidusitemap.xml
+```
+
+  在``package.json``中加入依赖项``"hexo-generator-sitemap": "^1.1.2"``即可。
