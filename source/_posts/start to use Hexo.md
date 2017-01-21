@@ -1,11 +1,14 @@
 title: 如何使用hexo提高自己的逼格
+
 categories: 前端
+
 tags: 
  - hexo
  - 博客
  - next
  - 静态博客
-date: 2017-01-21 19:37:30
+
+date: 2017/01/21
 ---
 感谢铮神（[@zccz14](zccz14.com)）的博客，成功使用Travis CI和github实现了博客的自动部署。最近几天一直在折腾hexo，就讲一下自己的一点经验。因为我只用了[next主题](http://theme-next.iissnan.com)，所以以下所有的配置也都是针对next主题的，其他主题也大致相似。
 
