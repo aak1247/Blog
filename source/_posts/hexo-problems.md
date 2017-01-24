@@ -7,7 +7,6 @@ tags:
 
 category: 
  - 前端
-   - 博客
 
 date: 2017/01/22
 ---
@@ -40,7 +39,7 @@ YAMLException: missed comma between flow collection entries at line 33, column 1
 &nbsp;&nbsp;&nbsp;&nbsp;报错信息如下：
 
 ```shell
-
+YAMLException: end of the stream or a document separator is expected at line x, column y:
 ```
 
 
@@ -70,7 +69,7 @@ FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/do
 Template render error: (unknown path)
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;目前只能将语句写在块儿级代码中，因为hexo不会渲染<pre>与</pre>之间的内容，markdown的块儿级代码被解析为:
+&nbsp;&nbsp;&nbsp;&nbsp;目前只能将语句写在块儿级代码中，因为hexo不会渲染&lt;pre&gt;与&lt;/pre&gt;之间的内容，markdown的块儿级代码被解析为:
 
 ```html
 <pre>
