@@ -8,12 +8,11 @@ tags:
 keywords:
  - codevs
  - 均分纸牌
- 
- category: acm-水题
 
- date: 2017/01/26
+category: acm-水题
 
- ---
+date: 2017/01/26
+---
 
 太久没写C++了，想起来codevs上的题目用来找手感挺好的，做了几道水题。本题目来自于codeVS天梯黄金组，比较简单，使用贪心即可解掉，题目链接：[codeVS-1089](http://codevs.cn/problem/1098/) 。
 
