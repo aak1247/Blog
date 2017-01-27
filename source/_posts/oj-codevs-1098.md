@@ -74,7 +74,7 @@ int sum = 0;
 int times = 0;
 
 
-void* devide(int l,int r){
+void* divide(int l,int r){
     if(l==r)return NULL;
     if(a[l]>res){
         ++times;
@@ -85,7 +85,7 @@ void* devide(int l,int r){
         a[l]=res;
         times++;
     }
-    return devide(l+1,r);
+    return divide(l+1,r);
 }
 
 int main(){
@@ -95,7 +95,7 @@ int main(){
         sum+=a[i];
     }
     res = sum/n;
-    devide(0,n-1);
+    divide(0,n-1);
     cout<<times;
     return 0;
 }
