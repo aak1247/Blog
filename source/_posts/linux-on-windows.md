@@ -16,9 +16,10 @@ date: 2017/02/06
 
 &nbsp;&nbsp;&nbsp;&nbsp;Win10一周年版推出了用于Windows的Linux子系统这一功能，最近体验了一下感觉极佳。不说别的，有一个完整的Linux环境就可以完爆一切bash环境了，痛快地卸载了Git for Windows/Cygwin/minGW/msys/babun吧！
 
+<!--more-->
+
 &nbsp;&nbsp;&nbsp;&nbsp;Linux子系统和Windows的结合真是有一种神互补。子系统可以挂载windows的文件系统，于是就可以在现有的文件系统下干一个完整的Linux环境所能干的事情。软件丰富更适合日常使用的Windows与开源且适合开发的Linux结合使得开发更加简便，不用再考虑双系统虚拟机这种效率不高的结合方式了，Linux on Windows用一种应用软件的方式实现了系统软件的功能，这一点可以说让人惊艳了。重要的是这样同时运行的两个系统并不是相互独立的，而是可以协作的，以后完全可以使用Windows下的工具进行编码，然后在Linux子系统进行Git提交，当然，它所能够发挥的作用远远不仅于此。
 
-<!--more-->
 
 ## 如何启用
 
@@ -28,7 +29,7 @@ date: 2017/02/06
 
 &nbsp;&nbsp;&nbsp;&nbsp;系统模式的设定位于所有设置->更新和安全->针对开发人员, 更改后如下：
 
-<img src="//ojtxs7ajx.bkt.clouddn.com/snipaste20170121_152642.png" width="100%">
+<img src="//ojtxs7ajx.bkt.clouddn.com/snipaste20170206_210255.png" width="100%">
 
 #### 更改系统功能
 
