@@ -127,6 +127,12 @@ date: 2017/02/06
 
 &nbsp;&nbsp;&nbsp;&nbsp;找到``HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont\``添加项即可。如添加000项，值为要添加的字体名。
 
+#### 更好的选择
+
+&nbsp;&nbsp;&nbsp;&nbsp;推荐使用cmder代替cmd，外观极美的一个命令行工具，关键字高亮、配色和字体都很棒，可定制性很强。不过在cmder中使用Linux on Windows只有登陆后才能正常使用，登录前（输入``bash``而未切换到具体用户）甚至没有关键字高亮和命令重复的支持。
+
+&nbsp;&nbsp;&nbsp;&nbsp;此外，cmder还提供了对mintty/poweshell等的支持。很优雅~
+
 ## 进阶
 
 &nbsp;&nbsp;&nbsp;&nbsp;[w2qw](https://www.reddit.com/user/w2qw)  提供了一种通过bash运行图形界面软件的方法。主要步骤如下：
