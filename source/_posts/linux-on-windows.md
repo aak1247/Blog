@@ -10,7 +10,7 @@ date: 2017/02/06
 
 ---
 
-<img src="//ojtxs7ajx.bkt.clouddn.com/627e58c18900b84e667585fc21cf4e7b.jpg" class="full-image">
+<img src="http://ojtxs7ajx.bkt.clouddn.com/627e58c18900b84e667585fc21cf4e7b.jpg" class="full-image">
 
 ## Linux on Windows简介
 
@@ -29,7 +29,7 @@ date: 2017/02/06
 
 &nbsp;&nbsp;&nbsp;&nbsp;系统模式的设定位于所有设置->更新和安全->针对开发人员, 更改后如下：
 
-<img src="//ojtxs7ajx.bkt.clouddn.com/snipaste20170206_210255.png" width="100%">
+<img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170206_210255.png" width="100%">
 
 #### 更改系统功能
 
@@ -93,10 +93,10 @@ date: 2017/02/06
     $ apt-get install zsh
 ```
 
-##### 安装wget
+##### 安装wget和git
 
 ```shell
-    $ apt-get install wget
+    $ apt-get install wget git
 ```
 
 ##### 执行oh-my-zsh配置脚本

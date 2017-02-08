@@ -106,3 +106,5 @@ Template render error: (unknown path)
 &nbsp;&nbsp;&nbsp;&nbsp;相对协议简言之就是省略掉协议类型而直接写链接路径的请求方式，例如``<img src="//baidu.com.gif">``, 浏览器会根据页面类型请求资源，例如在HTTPS页面中就使用HTTPS协议的方式请求资源。css文件也可以使用此方式。
 
 > 注意：&lt;link&gt; 或 @import 引入样式表时使用相对协议，IE7、IE8会下载文件两次
+
+&nbsp;&nbsp;&nbsp;&nbsp;另外，在github page中使用不支持https的资源，如果采用相对协议可能会导致加载异常缓慢，对于一部分资源（图片等）可以采用http的方式加载，当然更好的方式是采用本地文件进行加载，或者单独建立用于存储静态文件的repo。另外github其实还有一个存储其他文件的服务器，也可以将文件放在issue中通过链接访问。
