@@ -15,7 +15,7 @@ date: 2017/02/11
 ### 为什么学习ruby
 
 &nbsp;&nbsp;&nbsp;&nbsp;和Python一样，Ruby也是一个相当开发者友好的语言，遵循着最小惊讶原则设计的ruby语言甚至在一定程度上比起Python更加容易学习和使用。当然，学习ruby比较主要的一点在于ruby on rails在大数据领域运用相当广泛，在学习成本不高的前提下学习ruby还是相当合算的。
-
+<!--more-->
 ### 学习资源
 
 &nbsp;&nbsp;&nbsp;&nbsp;[ruby.org](http://www.ruby-lang.org/zh_cn/documentation/)
@@ -29,13 +29,7 @@ date: 2017/02/11
 
 ### 命令行
 
-&nbsp;&nbsp;&nbsp;&nbsp;bash下输入``irb``即可进入ruby的交互式命令行工具，用来学习语法命令行很棒。退出irb命令行输入``exit``、``quit``或
-<kbd>CTRL</kbd>
-\+
-<kbd>D</kbd>。也可以输入``ruby``进入命令行，输入
-<kbd>CTRL</kbd>
-\+
-<kbd>D</kbd>运行,但是体验大概不太好。
+&nbsp;&nbsp;&nbsp;&nbsp;bash下输入``irb``即可进入ruby的交互式命令行工具，用来学习语法命令行很棒。退出irb命令行输入``exit``、``quit``或<kbd>CTRL</kbd>+<kbd>D</kbd>。也可以输入``ruby``进入命令行，输入<kbd>CTRL</kbd>+<kbd>D</kbd>运行,但是体验大概不太好。
 
 ### 运行脚本
 
