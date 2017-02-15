@@ -14,7 +14,7 @@ date: 2017/02/11
 
 ### 为什么学习ruby
 
-&nbsp;&nbsp;&nbsp;&nbsp;和Python一样，Ruby也是一个相当开发者友好的语言，遵循着最小惊讶原则设计的ruby语言甚至在一定程度上比起Python更加容易学习和使用。当然，学习ruby比较主要的一点在于ruby on rails在大数据领域运用相当广泛，在学习成本不高的前提下学习ruby还是相当合算的。
+&nbsp;&nbsp;&nbsp;&nbsp;和Python一样，Ruby也是一个相当开发者友好的语言，遵循着最小惊讶原则设计的ruby语言甚至在一定程度上比起Python更加容易学习和使用。ruby on rails在web运用相当广泛，在学习成本不高的前提下学习ruby还是相当合算的。
 <!--more-->
 ### 学习资源
 
@@ -134,3 +134,6 @@ end
 4. r+/w+/a+: 读写模式，区别是r+和w+的文件指针初始位于文件头，a+的文件指正初始位于文件尾；r+在找不到文件时会报错，w+和a+在找不到时会创建新文件。
 
 源码链接：&nbsp;&nbsp;&nbsp;&nbsp;[源码](https://github.com/aak1247/ruby-learning/tree/master/source/chap1)
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;嗯...不小心入了坑，只是记录一下，应该不会花太多时间去学ruby了233
