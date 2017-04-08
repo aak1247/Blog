@@ -137,7 +137,7 @@ date: 2017/02/06
 
 <img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170211_002426.png">
 
-&nbsp;&nbsp;&nbsp;&nbsp;如果遇到vim的visual block模式无法进入的问题，在设置中关闭Ctrl+v的粘贴功能就好。
+&nbsp;&nbsp;&nbsp;&nbsp;如果遇到vim的visual block模式无法进入的问题，在设置中关闭Ctrl+v的粘贴功能就好:``settings->keys&macro->paste->paste mode #2->do nothing``。
 
 ## 进阶
 
