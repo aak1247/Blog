@@ -18,6 +18,10 @@ date: 2017/04/10
 
     cmd下的配置位于``cmder/config/user-alias.cmd``，bash下的配置可以通过在``cmder/config/user-profile.sh``中加入如：``alias la='ls --all'``来进行添加。
 
+> this is a test
+
+
+
 
 
 
