@@ -1,4 +1,4 @@
-title: 一些有用的Java语言特性: 静态导入 / try-with-resources /Stream API/ lambda表达式
+title: 一些有用的Java语言特性： 静态导入 / try-with-resources / Stream API / lambda表达式
 
 date: 2017/03/01
 

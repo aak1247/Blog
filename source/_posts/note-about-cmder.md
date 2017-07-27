@@ -12,6 +12,9 @@ date: 2017/04/10
 
 ## cmder简介
 
+<img class="full-image" src="http://cmder.net/img/main.jpg"/>
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;留坑待填
 
 ## 关于alias的配置
