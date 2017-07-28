@@ -87,3 +87,47 @@ $ sudo apt-get install -y mongodb-org # 安装mongodb
 
 
 # 其他配置
+
+## maven 配置
+
+### 下载maven
+
+可以通过浏览器/ftp下载或者直接wget。终端可以使用浏览器``w3m``访问[官网](http://maven.apache.org/download.cgi)，直接使用``sudo apt install w3m``即可安装，使用十分方便。
+
+### 解压maven包
+
+```shell
+$ sudo tar zxvf apache-maven-3.5.0-bin.tar.gz
+$ mv ./apache-maven-3.5.0 /opt/  #并移到opt目录下
+```
+
+### 创建软链接
+
+```shell
+$ cd /bin
+$ ln -s /opt/apache-maven-3.5.0/bin/mvn mvn
+```
+
+### 配置环境变量
+
+```shell
+$ sudo vim /etc/profile
+......
+export M2_HOME=/opt/apache-maven-3.5.0
+export PATH=${M2_HOME}/bin:$PATH
+......
+```
+
+建议先备份一下配置文件``sudo cp /etc/profile /etc/profile.bk``
+
+### 加载配置
+
+```shell
+$ source /etc/profile
+```
+
+### 测试一下
+
+```shell
+$ mvn -v
+```
