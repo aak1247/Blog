@@ -19,7 +19,9 @@ date: 2017/04/10
 
 ## 关于alias的配置
 
-&nbsp;&nbsp;&nbsp;&nbsp;cmd下的配置位于``cmder/config/user-alias.cmd``，bash下的配置可以通过在``cmder/config/user-profile.sh``中加入如：``alias la='ls --all'``来进行添加。
+&nbsp;&nbsp;&nbsp;&nbsp;cmd下的配置位于``cmder/config/user-alias.cmd``，bash下的配置可以通过在``cmder/config/user-profile.sh``中加入如：``alias la='ls --all'``来进行添加。也可以在vender中对应的shell客户端配置中添加。
+
+**黑科技**: 添加一条``alias myalias='echo "alias $*">>${config position}'``，其中``${config position}``为当前配置文件的路径，即可在以后通过``myalias``命令添加永久alias。
   
 <!--more-->
 
