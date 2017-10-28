@@ -1,6 +1,6 @@
 title: Spring Boot配置AOP实践
 
-category: java web
+category: java
 
 tags: 
  - java
