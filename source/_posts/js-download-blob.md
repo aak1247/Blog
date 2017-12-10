@@ -59,7 +59,7 @@ a.remove();
 ```javascript
 //使用jquery
 $.get(url, function(data){
-    var blob = new Blob([data], {type: "application/csv"});//加一个方括号,data会直接转为字符串
+    var blob = new Blob([data], {type: "application/csv"});//加一个方括号,data会直接转为字符串, 这里有一个问题,就是jquery本身会将data作为String处理
     var a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
     a.download = "download.csv";
@@ -67,6 +67,35 @@ $.get(url, function(data){
     a.click();
     a.remove();
 });
+```
+
+考虑到jQuery的问题以及兼容性等, 以及不能转为字符串的情况, 可以使用传统的XMLHttpRequest发送请求(),代码如下:
+```javascript
+//使用XMLHttpRequest
+var httpRequest;
+if (window.XMLHttpRequest) {
+    httpRequest = new XMLHttpRequest();
+} else if (window.ActiveXObject) { // 兼容ie6及之前的版本
+    httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+}
+httpRequest.open("GET", url/*url地址*/, true);
+httpRequest.responseType = "blob";
+httpRequest.onload = function () {
+    if (this.status === 200 ) {
+        var blob = this.response;
+        var reader = new FileReader();
+        reader.readAsDataURL(blob);
+        reader.onload = function(ev) {//读入完成事件
+            var a = document.createElement("a");
+            a.href = ev.target.result;//读取结果
+            a.download = "download.csv";
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
+    }
+}
+httpRequest.send();
 ```
 
 
