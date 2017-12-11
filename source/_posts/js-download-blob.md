@@ -19,6 +19,7 @@ date: 2017/12/10
 3. 点击下载(直接调用a标签的click()方法即可),即从内存中下载到磁盘中去;
 
 
+<!--more-->
 ## Blob对象的用法
 
 ### 构造函数
@@ -33,13 +34,13 @@ date: 2017/12/10
 
 ```javascript
 var blob = new Blob(["test"], {type: "application/csv"})//MIME类型为csv的Blob对象
-``` 
+```
 
 ## 获取URL并实现下载
 
 ### 示例
 
-```Javascript
+```javascript
 var blob = new Blob(["test"], {type: "application/csv"});
 var a = document.createElement("a");
 a.href = URL.createObjectURL(blob);//创建指向此blob的链接
