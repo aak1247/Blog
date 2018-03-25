@@ -1,6 +1,6 @@
 title: ubuntu 服务脚本编写
 
-category: java
+category: linux
 
 tags: 
     - java
