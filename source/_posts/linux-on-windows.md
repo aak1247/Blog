@@ -133,7 +133,7 @@ date: 2017/02/06
 
 &nbsp;&nbsp;&nbsp;&nbsp;此外，cmder还提供了对mintty/poweshell等的支持。很优雅~
 
-&nbsp;&nbsp;&nbsp;&nbsp;使用cmder时可以新建一个空的task，在start-up的框中填入bash.exe即可。这样可以避免历史命令文件的读取异常，保证正常使用上下键回看历史命令。不过由于cmder对vim的支持不太好，可能会有方向键的问题。解决方法如下：在框中填入``%windir%\system32\bash.exe ~ -cur_console:p:n``即可。界面如下：
+&nbsp;&nbsp;&nbsp;&nbsp;使用cmder时可以新建一个空的task，在start-up的框中填入``%windir%\system32\bash.exe``即可。这样可以避免历史命令文件的读取异常，保证正常使用上下键回看历史命令。不过由于cmder对vim的支持不太好，可能会有方向键的问题。解决方法如下：在框中填入``%windir%\system32\bash.exe ~ -cur_console:p:n``即可。界面如下：
 
 <img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170211_002426.png">
 
