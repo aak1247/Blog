@@ -8,6 +8,7 @@ description: Still waters run deep
 avatar: /images/avatar.gif
 language: zh-Hans
 duoshuo_shortname: aak1247
+permalink: :title.html
 
 sitemap: 
   path: sitemap.xml
