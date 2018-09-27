@@ -9,7 +9,7 @@ tags:
 date: 2018/09/14
 ---
 
-![AutoHotKey](https://www.autohotkey.com/assets/images/ahk_wallpaper_reduced.jpg)
+![AutoHotKey](http://ojtxs7ajx.bkt.clouddn.com/ahk_wallpaper_reduced.jpg)
 
 长期使用mac/deepin这样的系统以后再回windows会有非常大地不适应感，不够好在windows提供的灵活性使得它能够在应用层很容易具有其他系统的一些优雅特性，比如mac的全局搜索、热区、全局快捷键等。简单记录一下折腾windows的一些基本配置.
 
