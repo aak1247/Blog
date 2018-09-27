@@ -67,7 +67,7 @@ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 
 安装开发环境：``$ sudo apt-get install openjdk-8-jdk``。
 
-使用openjdk的优点在于免去手动下载和配置环境变量的步骤，方便很多，但是openjdk只包含最精简的jdk。
+使用openjdk的优点在于免去手动下载和配置环境变量的步骤，方便很多，但是``openjdk``与oracle jdk所包含的库有所差异，jdk9及以后版本的openjdk还存在一些其他问题。
 
 ### 安装jdk/jre
 
@@ -75,7 +75,7 @@ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 
 [官网](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-可以先配置FTP然后通过FTP上传到服务器，也可以直接用wget命令下载，附[下载链接](#下载链接)
+可以先配置``FTP``然后通过``FTP``上传到服务器，也可以直接用``wget``命令下载，附[下载链接](#下载链接)
 
 ##### 下载链接
 [Java SE 8 server sdk for x64](http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/server-jre-8u144-linux-x64.tar.gz)
