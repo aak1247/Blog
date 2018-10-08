@@ -46,9 +46,51 @@ sh -c "$(wget https://github.com/aak1247/.tmux/blob/master/install.sh -O -)"
 
 # 语言环境
 
+## node配置
+
+### 安装nvm
+
+```shell
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+### 通过 nvm 安装 node
+
+```shell
+nvm install stable
+nvm use stable
+```
+
+在zsh下，可能需要（如果也安装了bash）手动将 nvm 环境变量加入 ~/.zshrc文件末尾:
+
+```bashrc
+export NVM_DIR="$HOME/.nvm"
+ [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+ [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+然后更新一下配置：
+```shell
+source ~/.zshrc
+````
+
+### 安装yarn
+
+```shell
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install --no-install-recommends yarn
+```
+
+## python配置
+
+### 安装 python/pip 和 pipenv
+
+可以通过apt方式安装
+
 ## Java配置
 
-### 安装 openjdk/openjdk-jre
+### 安装 openjdk / openjdk-jre
 
 安装运行环境：``$ sudo apt-get install openjdk-8-jre``, 可以更改为其他版本 更改数字即可。
 
@@ -129,4 +171,16 @@ sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64.deb
 似乎不用怎么配置，直接安装即可
 ``sudo apt install maven``
 
+```shell
+$ mvn -v
+```
+
 # 干货
+
+## tmux+vim+oh-my-zsh安装脚本
+
+留坑待填
+
+## 全家桶脚本
+
+留坑填
