@@ -21,7 +21,7 @@ date: 2017/07/27
 
 主要配置 zsh 替代默认的bash, 配置地址[shell start up](https://github.com/aak1247/shell-set-up)。
 ```shell
-sudo apt install zsh git &\
+sudo apt install zsh git &&\
 sh -c "$(wget https://raw.githubusercontent.com/aak1247/shell-set-up/master/install.sh -O -)"
 ```
 
