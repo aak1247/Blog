@@ -40,7 +40,7 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 很好看的tmux配置。
 
 ```shell
-sh -c "$(wget https://github.com/aak1247/.tmux/blob/master/install.sh -O -)"
+sh -c "$(wget https://raw.githubusercontent.com/aak1247/.tmux/master/install.sh -O -)"
 ```
 
 
