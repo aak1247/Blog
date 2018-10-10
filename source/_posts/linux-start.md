@@ -15,6 +15,35 @@ date: 2017/07/27
 
 <!--more-->
 
+# 基础配置
+
+## shell
+
+主要配置 zsh 替代默认的bash, 配置地址[shell start up](https://github.com/aak1247/shell-set-up)。
+```shell
+sudo apt install zsh git &&\
+sh -c "$(wget https://raw.githubusercontent.com/aak1247/shell-set-up/master/install.sh -O -)"
+```
+
+## vim
+
+![截图](http://ojtxs7ajx.bkt.clouddn.com/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_20180920140817.png)
+
+简单的基本vim配置，语法高亮、自动缩进等、状态栏配置等。
+```shell
+git clone --depth=1 https://github.com/aak1247/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+```
+
+## tmux
+
+很好看的tmux配置。
+
+```shell
+sh -c "$(wget https://raw.githubusercontent.com/aak1247/.tmux/master/install.sh -O -)"
+```
+
+
 # 语言环境
 
 ## node配置
@@ -63,13 +92,13 @@ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 
 ### 安装 openjdk / openjdk-jre
 
-安装运行环境：``$ sudo apt-get install openjdk-8-jre``, 可以更改为其他版本。
+安装运行环境：``$ sudo apt-get install openjdk-8-jre``, 可以更改为其他版本 更改数字即可。
 
 安装开发环境：``$ sudo apt-get install openjdk-8-jdk``。
 
 使用openjdk的优点在于免去手动下载和配置环境变量的步骤，方便很多，但是``openjdk``与oracle jdk所包含的库有所差异，jdk9及以后版本的openjdk还存在一些其他问题。
 
-### 安装jdk/jre
+### 安装oracle jdk/jre
 
 #### 首先下载jdk
 
@@ -84,95 +113,63 @@ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 
 [Java SE 8 jre for x64](http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jre-8u144-linux-x64.tar.gz)
 
-# 数据库配置
+## python环境
 
-## mongodb 数据库配置
+### 安装
+```shell
+sudo apt install python-pip #安装自带Python2.7对应的pip
+sudo apt install python3 #安装python3
+```
 
-> 注： 可以通过apt方式安装
-
-### 首先引入mongodb的GPL公钥
-``sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10``
-
-### 创建list文件
-
-ubuntu 12.04
-``$ echo "deb http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list``
-
-ubuntu 14.04
-``$ echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list``
-
-ubtuntu 16.04
-``$ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list``
-
-### 更新源列表并安装mongodb
+### anaconda
 
 ```shell
-$ sudo apt-get update # 更新源列表
-$ sudo apt-get install -y mongodb-org # 安装mongodb
-# 要安装特定版本的mongodb命令如：sudo apt-get install -y mongodb-org=3.0.15 mongodb-org-server=3.0.15 mongodb-org-shell=3.0.15 mongodb-org-mongos=3.0.15 mongodb-org-tools=3.0.15
-# 安装完成以后，可以将版本固定为当前，输入：
-# echo "mongodb-org hold" | sudo dpkg --set-selections
-# echo "mongodb-org-server hold" | sudo dpkg --set-selections
-# echo "mongodb-org-shell hold" | sudo dpkg --set-selections
-# echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
-# echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+sh Anaconda3-5.2.0-Linux-x86_64.sh
 ```
+
+### coda
+
+```shell
+wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64
+sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64.deb
+
+```
+
+### pytorch
+
+
+
+### tensorflow
+
+
+
+# 数据库配置
+
+## mongodb 
+
+``sudo apt install mongodb``
 
 ### 配置数据库文件路径和日志文件路径
 
-配置文件为：``/etc/mongod.conf``。
+配置文件为：``/etc/mongodb.conf``。
 
 ### 运行mongodb数据库
 
-``$ sudo service start mongod start``
+``$ sudo service start mongodb start``
 
 
 # 服务器配置
+
+留坑
 
 
 # 其他配置
 
 ## maven 配置
 
-> 注： 可以通过apt方式安装
-
-### 下载maven
-
-可以通过浏览器/ftp下载或者直接wget。终端可以使用浏览器``w3m``访问[官网](http://maven.apache.org/download.cgi)，直接使用``sudo apt install w3m``即可安装，使用十分方便。
-
-### 解压maven包
-
-```shell
-$ sudo tar zxvf apache-maven-3.5.0-bin.tar.gz
-$ mv ./apache-maven-3.5.0 /opt/  #并移到opt目录下
-```
-
-### 创建软链接
-
-```shell
-$ cd /bin
-$ ln -s /opt/apache-maven-3.5.0/bin/mvn mvn
-```
-
-### 配置环境变量
-
-```shell
-$ sudo vim /etc/profile
-......
-export M2_HOME=/opt/apache-maven-3.5.0
-export PATH=${M2_HOME}/bin:$PATH
-......
-```
-
-建议先备份一下配置文件``sudo cp /etc/profile /etc/profile.bk``
-
-### 加载配置
-
-```shell
-$ source /etc/profile
-```
-
-### 测试一下
+似乎不用怎么配置，直接安装即可
+``sudo apt install maven``
 
 ```shell
 $ mvn -v

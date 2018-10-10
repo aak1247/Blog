@@ -11,7 +11,7 @@ date: 2018/09/14
 
 ![AutoHotKey](http://ojtxs7ajx.bkt.clouddn.com/ahk_wallpaper_reduced.jpg)
 
-长期使用mac/deepin这样的系统以后再回windows会有非常大地不适应感，不够好在windows提供的灵活性使得它能够在应用层很容易具有其他系统的一些优雅特性，比如mac的全局搜索、热区、全局快捷键等。简单记录一下折腾windows的一些基本配置.
+长期使用 mac/deepin 这样的系统以后再回windows会有非常大地不适应感，不够好在windows提供的灵活性使得它能够在应用层很容易具有其他系统的一些优雅特性，比如mac的全局搜索、热区、全局快捷键等。简单记录一下折腾windows的一些基本配置.
 
 
 
@@ -38,7 +38,7 @@ date: 2018/09/14
 
 可以参考[cmder的配置](/note-about-cmder.html) (汗...还没填坑)
 
-可以使用wox来定义全局的快捷键调用cmder。
+可以使用 wox 来定义全局的快捷键调用 cmder。
 
 ## AutoHotkey
 
@@ -60,11 +60,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 ## wsl
 
-wsl是windows下的linux子系统，基于windows系统API实现了一个POSIX的内核，所以虚拟化程度比起虚拟机要低得多，但是能提供更大的权限和灵活性，比如使用linux下的工具和软件来操作windows下的文件，比起虚拟机共享数据要方便得多，也能省去双系统切换系统的麻烦。
+wsl 是 windows 下的 linux 子系统，基于 windows 系统 API 实现了一个 POSIX 的内核，所以虚拟化程度比起虚拟机要低得多，但是能提供更大的权限和灵活性，比如使用 linux 下的工具和软件来操作 windows 下的文件，比起虚拟机共享数据要方便得多，也能省去双系统切换系统的麻烦。
 
 安装过程见[启用Win10的Linux子系统](http://aak1247.coding.me/linux-on-windows.html)。
 
-当然，缺点也是显而易见的，较低的虚拟化程度带来了安全性问题，有时候也会因为文件系统的差异（文件系统还是ntfs）而引起一些非常难以发现的bug。
+当然，缺点也是显而易见的，较低的虚拟化程度带来了安全性问题，有时候也会因为文件系统的差异（文件系统还是 ntfs ）而引起一些非常难以发现的 bug 。
 
 # 配置篇
 
