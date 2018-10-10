@@ -134,3 +134,5 @@ admin库的导入导出可能存在问题，如果出现无法登录的问题，
 
 - 更详细的配置： [配置](https://docs.mongodb.com/manual/reference/configuration-options/)
 - 错误码定义： [错误码](https://github.com/mongodb/mongo/blob/master/src/mongo/util/exit_code.h)
+- 备份和恢复： [back up and restore tools](https://docs.mongodb.com/manual/tutorial/backup-and-restore-tools/)
+- 用户和角色管理: [Mange Users and Roles](https://docs.mongodb.com/manual/tutorial/manage-users-and-roles/)
