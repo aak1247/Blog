@@ -91,7 +91,7 @@ next主题内置了对多说评论的支持，只需要在站点配置文件中�
 
 效果参考：
 
-  <img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170121_152642.png" class="full-image">
+  <img src="http://qiniu.cdn.hive-intel.com/aak1247/snipaste20170121_152642.png" class="full-image">
 
   #### 使用github issue实现
 
@@ -327,7 +327,7 @@ next主题内置了对多说评论的支持，只需要在站点配置文件中�
 
   效果如下：
 
-  <img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170121_163304.png" class="full-image"/>       
+  <img src="http://qiniu.cdn.hive-intel.com/aak1247/snipaste20170121_163304.png" class="full-image"/>       
 
   ### 搜索功能
 

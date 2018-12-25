@@ -10,7 +10,7 @@ date: 2017/02/06
 
 ---
 
-<img src="http://ojtxs7ajx.bkt.clouddn.com/627e58c18900b84e667585fc21cf4e7b.jpg" class="full-image">
+<img src="http://qiniu.cdn.hive-intel.com/aak1247/627e58c18900b84e667585fc21cf4e7b.jpg" class="full-image">
 
 ## Linux on Windows简介
 
@@ -31,7 +31,7 @@ date: 2017/02/06
 
 &nbsp;&nbsp;&nbsp;&nbsp;系统模式的设定位于所有设置->更新和安全->针对开发人员, 更改后如下：
 
-<img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170206_210255.png" width="100%">
+<img src="http://qiniu.cdn.hive-intel.com/aak1247/snipaste20170206_210255.png" width="100%">
 
 #### 更改系统功能
 
@@ -137,7 +137,7 @@ date: 2017/02/06
 
 &nbsp;&nbsp;&nbsp;&nbsp;使用cmder时可以新建一个空的task，在start-up的框中填入``%windir%\system32\bash.exe``即可。这样可以避免历史命令文件的读取异常，保证正常使用上下键回看历史命令。不过由于cmder对vim的支持不太好，可能会有方向键的问题。解决方法如下：在框中填入``%windir%\system32\bash.exe ~ -cur_console:p:n``即可。界面如下：
 
-<img src="http://ojtxs7ajx.bkt.clouddn.com/snipaste20170211_002426.png">
+<img src="http://qiniu.cdn.hive-intel.com/aak1247/snipaste20170211_002426.png">
 
 &nbsp;&nbsp;&nbsp;&nbsp;如果遇到vim的visual block模式无法进入的问题，在设置中关闭Ctrl+v的粘贴功能就好:``settings->keys&macro->paste->paste mode #2->do nothing``。
 

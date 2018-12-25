@@ -24,7 +24,7 @@ date: 2017/02/24
 &nbsp;&nbsp;&nbsp;&nbsp;在这种分层中，比较主要的一点在于将直接的数据库操作全部放在Dao层中，避免侵入Service层，而将所有的业务逻辑放在Service中，避免侵入Controller层。
 
 其关系可以表示如下：
-<image src="http://ojtxs7ajx.bkt.clouddn.com/SSH-ENTITY_DAO_SERVICE_CONTROLLER.png"/>
+<image src="http://qiniu.cdn.hive-intel.com/aak1247/SSH-ENTITY_DAO_SERVICE_CONTROLLER.png"/>
 
 # 启发
 

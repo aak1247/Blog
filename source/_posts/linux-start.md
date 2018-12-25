@@ -27,7 +27,7 @@ sh -c "$(wget https://raw.githubusercontent.com/aak1247/shell-set-up/master/inst
 
 ## vim
 
-![截图](http://ojtxs7ajx.bkt.clouddn.com/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_20180920140817.png)
+![截图](http://qiniu.cdn.hive-intel.com/aak1247/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_20180920140817.png)
 
 简单的基本vim配置，语法高亮、自动缩进等、状态栏配置等。
 ```shell

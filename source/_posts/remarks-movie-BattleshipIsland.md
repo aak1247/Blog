@@ -6,7 +6,7 @@ tags:
     - 电影
 
 ---
-<image src="http://ojtxs7ajx.bkt.clouddn.com/946f0a8cf26dfe2f57a28a73be5ee41e.jpg" width="100%">
+<image src="http://qiniu.cdn.hive-intel.com/aak1247/946f0a8cf26dfe2f57a28a73be5ee41e.jpg" width="100%">
 一个落后的民族在真实的历史面前犹如待宰的羔羊。民族的屈辱对于那一段历史中的每一个人都是无比沉重的痛苦，个体宛如泡沫般脆弱和无力。
 <!--more-->
 占领国用谎言引诱着殖民地的人民沦为如牲畜般被欺辱的劳工，颇为讽刺的是劳工们受到最多的欺辱来自于自己的同胞，而引诱他们的谎言的传播者也正是这些同胞。
