@@ -82,6 +82,26 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 ```
 
+### 配置淘宝镜像
+
+#### npm 更换源
+
+```shell
+npm config set registry http://registry.npm.taobao.org/
+```
+
+#### 安装 cnpm
+
+```shell
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+#### yarn 更换源
+
+```shell
+yarn config set registry http://registry.npm.taobao.org/
+```
+
 ## python配置
 
 ### 安装 python/pip 和 pipenv
