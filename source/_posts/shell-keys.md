@@ -2,7 +2,7 @@ title: [备忘]shell比较好用的快捷键
 
 category: 笔记
 
-tags:
+tags: 
  - shell
  - 快捷键
 

@@ -2,7 +2,7 @@ title: 标题
 
 category: 分类
 
-tags:
+tags: 
  - 标签1
  - 标签2
 
