@@ -1,4 +1,4 @@
-title: 记一次自动测试失败之后的debug
+title: 记一次自动测试失败之后的 debug
 
 category: java
 
@@ -88,6 +88,7 @@ windows本地通过相同docker镜像进行构建，完全正常。
 # 最后
 
 学会了通过jconsole来进行监控，方法是在jvm的启动参数中加入
+
 ```shell
 -Djava.rmi.server.hostname=xxx.xxx.xxx.xxx \ 
 -Dcom.sun.management.jmxremote.port=8999 \ 
