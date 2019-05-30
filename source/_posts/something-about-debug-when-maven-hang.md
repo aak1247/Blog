@@ -95,3 +95,5 @@ windows本地通过相同docker镜像进行构建，完全正常。
 -Dcom.sun.management.jmxremote.authenticate=false \ 
 -Dcom.sun.management.jmxremote.ssl=false
 ```
+
+然后就可以通过在本地运行jconsole(jdk/bin目录下)来监控运行情况啦， 地址``xxx.xxx.xxx.xxx:8999`` 这样就好。
