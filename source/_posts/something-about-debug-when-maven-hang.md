@@ -97,3 +97,10 @@ windows本地通过相同docker镜像进行构建，完全正常。
 ```
 
 然后就可以通过在本地运行jconsole(jdk/bin目录下)来监控运行情况啦， 地址``xxx.xxx.xxx.xxx:8999`` 这样就好。
+
+## Further Reading
+
+[再谈随机数引起的阻塞问题](http://hongjiang.info/java8-nativeprng-blocking/)
+[CentOS 7 下Tomcat启动超慢的原因及解决方案](https://www.jianshu.com/p/de2df2d92d92)
+[JVM上的随机数与熵池策略](http://hongjiang.info/jvm-random-and-entropy-source/)
+[The Right Way to Use SecureRandom](https://tersesystems.com/blog/2015/12/17/the-right-way-to-use-securerandom/)
