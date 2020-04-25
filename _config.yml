@@ -1,8 +1,8 @@
 title: 黑境
 subtitle: aak1247的博客
-url: https://aak1247.coding.me/
+url: https://www.aak1247.cn/
 root: /
-  
+
 author: aak1247
 description: Still waters run deep
 avatar: /images/avatar.gif
@@ -10,12 +10,12 @@ language: zh-Hans
 duoshuo_shortname: aak1247
 permalink: :title.html
 
-sitemap: 
+sitemap:
   path: sitemap.xml
-baidusitemap: 
+baidusitemap:
   path: baidusitemap.xml
 
-search: 
+search:
   path: search.xml
   field: post
   format: html
@@ -23,11 +23,11 @@ search:
 
 html_minifier:
   enable: true
-  exclude: 
+  exclude:
 
 css_minifier:
   enable: true
-  exclude: 
+  exclude:
     - '*.min.css'
 
 js_minifier:
@@ -35,7 +35,7 @@ js_minifier:
   mangle: true
   output:
   compress:
-  exclude: 
+  exclude:
     - '*.min.js'
 
 image_minifier:
